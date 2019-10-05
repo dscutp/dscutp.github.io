@@ -1,0 +1,78 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+
+---
+
+<div class="container-fluid p-0">
+  <div class="container mb-5">
+    <div class="row p3" data-aos="fade-right">
+      <div class="col-lg-4 col-md-4 col-sm-12 pt-4">
+        <img class="img-fluid" src="images/undraw_open_source_1qxw.svg">
+      </div>
+      <div class="col-lg-8 col-sm-12 col-md-8 pt-5 pr-4" data-aos="fade-left">
+          <h3 class="title">Developer Student Clubs UTP</h3>
+          <p>Developer Student Clubs (DSC) are community groups for students from any academic background in their undergraduate or graduate term. By joining a DSC, students build their professional and personal network, get access to Google developer resources, and work together to build solutions for local problems in a peer-to-peer learning environment.</p>
+      </div>
+    </div>
+  </div>
+  <div id="why" class="grey lighten-4 m-0">
+    <div class="container">
+      <div class="row p3">
+        <div class="col-lg-6 col-sm-12 col-md-6 pt-5 pr-4" data-aos="fade-right">
+            <h2 class="title">Why Join Our DSC?</h2>
+            <p>To level up your development skills, solve problems through technology and inspire people to create solutions for the community that is supported by Google Developers.</p>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 p-5" data-aos="fade-left">
+          <img class="img-fluid" src="images/undraw_pair_programming_njlp.svg">
+        </div>  
+      </div>
+    </div>
+  </div>
+  <div id="target" class=" blue white-text m-0">
+    <div class="container">
+      <div class="row p3">
+        <div class="col-lg-4 col-md-4 col-sm-12 p-lg-5 pt-3" data-aos="fade-right">
+          <img class="img-fluid" src="images/gd_dsc_lockup_vertical_white.png">
+        </div>
+        <div class="col-lg-8 col-sm-12 col-md-8 pt-lg-5 pt-3 pr-4" data-aos="fade-left">
+            <h2 class="title white-text">Target Audience!</h2>
+            <p>DSC activities are targeted at University students but not limited to those who want to learn more on IT development skills & interested to solve real-life problems using technology.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="team" class="m-0">
+    <div class="container text-center">
+      <h2 class="title mt-3" data-aos="fade-up">Core Team</h2>
+      <div class="d-flex flex-wrap">
+        {% for person in site.data.team %}
+          <div class="card" data-aos="fade-up">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="images/team/{{person.image}}" alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          
+            <!-- Card content -->
+            <div class="card-body card-body-cascade text-center">
+          
+              <!-- Title -->
+              <h4 class="card-title"><strong>{{person.position}}</strong></h4>
+              <!-- Subtitle -->
+              <h6 class="font-weight-bold grey-text py-2">{{person.name}}</h6>
+              <!-- Text -->
+              <p class="card-text"></p>
+            </div>
+          
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
