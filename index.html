@@ -18,7 +18,7 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="why grey lighten-4 m-0">
+  <div id="why" class="grey lighten-4 m-0">
     <div class="container">
       <div class="row p3">
         <div class="col-lg-6 col-sm-12 col-md-6 pt-5 pr-4">
@@ -29,6 +29,49 @@ layout: default
         <div class="col-lg-6 col-md-6 col-sm-12 p-5">
           <img class="img-fluid" src="images/undraw_pair_programming_njlp.svg">
         </div>  
+      </div>
+    </div>
+  </div>
+  <div id="target" class=" blue white-text m-0">
+    <div class="container">
+      <div class="row p3">
+        <div class="col-lg-4 col-md-4 col-sm-12 p-5">
+          <img class="img-fluid" src="images/gd_dsc_lockup_vertical_white.png">
+        </div>
+        <div class="col-lg-8 col-sm-12 col-md-8 pt-5 pr-4">
+            <h2 class="title white-text">Target Audience!</h2>
+            <p>DSC activities are targeted at University students but not limited to those who want to learn more on IT development skills & interested to solve real-life problems using technology.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="team" class="m-0">
+    <div class="container text-center">
+      <h2 class="title mt-3">Core Team</h2>
+      <div class="d-flex flex-wrap">
+        {% for person in site.data.team %}
+          <div class="card">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="images/team/{{person.image}}" alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          
+            <!-- Card content -->
+            <div class="card-body card-body-cascade text-center">
+          
+              <!-- Title -->
+              <h4 class="card-title"><strong>{{person.position}}</strong></h4>
+              <!-- Subtitle -->
+              <h6 class="font-weight-bold grey-text py-2">{{person.name}}</h6>
+              <!-- Text -->
+              <p class="card-text"></p>
+            </div>
+          
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>
