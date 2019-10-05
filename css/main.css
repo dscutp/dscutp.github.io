@@ -10,7 +10,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .preload-wrapper {
   display: flex;
   justify-content: center;
@@ -44,4 +43,23 @@
     50% {
         transform: translateY(25px);
     }
+}
+
+nav .logo-text {
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Montserrat', 'Roboto';
+}
+
+main .title {
+  font-family: 'Montserrat', 'Roboto';
+  font-weight: 700;
+  color: #555;
+}
+
+main {
+  margin-top: 100px;
+  
 }
