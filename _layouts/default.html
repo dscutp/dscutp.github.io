@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DSC UTP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="DSC UTP" />
+    <!-- Name, not URL (e.g. Apple, not apple.com) -->
+    <!--meta property="og:site_name" content="" /-->
+    <!-- URL. Should match canonical URL for SEO. Unique identifier for your article. -->
+    <meta property="og:url" content="dscutp.github.io" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta property="og:description" content="Developer Student Clubs Universiti Teknologi Petronas" />
+    <!-- Image for article. Facebook suggests at least 1200 x 630. -->
+    <meta property="og:image" content="/images/about-2.jpg" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+  {% include preloader.html %}
+  {% include navigation.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+
+
+
+  <script src="js/aos.js"></script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      //Preloader
+      $(window).on("load", function() {
+        preloaderFadeOutTime = 1000;
+        function hidePreloader() {
+          var preloader = $('.preload-wrapper');
+          preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+      });
+    });
+  </script>
+    
+  </body>
+</html>
