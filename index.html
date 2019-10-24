@@ -51,7 +51,7 @@ layout: default
       <h2 class="title my-5" data-aos="fade-up">Core Team</h2>
       <div class="d-flex flex-wrap justify-content-center">
         {% for person in site.data.team %}
-          <div class="card" data-aos="fade-up">
+          <div class="card team-card" data-aos="fade-up">
             <!-- Card image -->
             <div class="view overlay">
               <img class="card-img-top" src="images/team/{{person.image}}" alt="Card image cap">
@@ -64,11 +64,11 @@ layout: default
             <div class="card-body card-body-cascade text-center">
           
               <!-- Title -->
-              <h4 class="card-title"><strong>{{person.position}}</strong></h4>
+              <h6 class="card-title"><strong>{{person.position}}</strong></h6>
               <!-- Subtitle -->
-              <h6 class="font-weight-bold grey-text py-2">{{person.name}}</h6>
+              
               <!-- Text -->
-              <p class="card-text"></p>
+              <p class="card-text">{{person.name}}</p>
             </div>
           
           </div>
