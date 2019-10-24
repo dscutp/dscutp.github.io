@@ -16,12 +16,8 @@ layout: default
           <p>Developer Student Clubs (DSC) are community groups for students from any academic background in their undergraduate or graduate term. By joining a DSC, students build their professional and personal network, get access to Google developer resources, and work together to build solutions for local problems in a peer-to-peer learning environment.</p>
           <a class="btn btn-primary" href="https://developers.google.com/community/dsc" target="_blank" role="button">Learn More</a>
           <div class="social">
-            <a href="https://www.facebook.com/dscutp" title=""><i style="color: #4285F4;" class="fab fa-facebook-f"></i></a>
-            <!-- <a href="https://youtube.com/dscutp" title=""><i style="color: #DB4437" class="fab fa-youtube"></i></a> -->
-            <!-- <a href="https://instagram.com/dscutp" title=""><i style="color: #F4B400;" class="fab fa-instagram"></i></a> -->
-            <a href="https://github.com/dscutp" title=""><i style="color: #211F1F;" class="fab fa-github"></i></a>
-            <!-- <a href="https://medium.com/@dscutp" title=""><i style="color: #0F9D58;" class="fab fa-medium"></i></a> -->
-            <!-- <a href="https://twitter.com/dscutp" title=""><i style="color: skyblue;" class="fab fa-twitter"></i></a> -->
+            <a class="px-2 fa-lg fb-ic" href="https://www.facebook.com/dscutp"><i class="fab fa-facebook-f"></i></a>
+            <a class="px-2 fa-lg gh-ic" href="https://github.com/dscutp"><i class="fab fa-github"></i></a>
           </div>
       </div>
     </div>
@@ -71,13 +67,15 @@ layout: default
             <!-- Card content -->
             <div class="card-body card-body-cascade text-center">
           
-              <!-- Title -->
               <h6 class="card-title"><strong>{{person.position}}</strong></h6>
-              <!-- Subtitle -->
-              
-              <!-- Text -->
-              <p class="card-text">{{person.name}}</p>
+              <p class="card-text">{{person.name}}</p>              
+              <div class="social">
+                  {% if person.linkedin %}<a class="px-2 fa-sm li-ic" href="{{person.linkedin}}"><i class="fab fa-linkedin-in"></i></a>{% endif %}
+                  {% if person.github %}<a class="px-2 fa-sm gh-ic" href="{{person.github}}"><i class="fab fa-github"></i></a>{% endif %}
+                  {% if person.facebook %}<a class="px-2 fa-sm fb-ic" href="{{person.facebook}}"><i class="fab fa-facebook-f"></i></a>{% endif %}
+              </div>
             </div>
+            
           
           </div>
         {% endfor %}

@@ -70,14 +70,10 @@ main {
   font-size: 1.2em;
 }
 
-.social i {
-  margin-left: 15px
-}
-
 #team .card{
   margin: 20px;
   width: 200px;
-  height: 300px;
+  height: 360px;
 }
 
 #team .card .view {
@@ -88,4 +84,20 @@ main {
 #team .card .view  {
   min-height: 200px;
   max-height: 200px;
+}
+
+#team .social {
+  margin-top: 0px;
+}
+
+.fb-ic {
+  color: #4285F4;
+}
+
+.gh-ic {
+  color: #211F1F;
+}
+
+.li-ic {
+  color: #2867B2
 }
