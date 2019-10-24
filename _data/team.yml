@@ -1,18 +1,25 @@
 - name: Dafuallah Esameldien Dafaallah
-  position: DSC Lead
+  position: President/DSC Lead
   image: daffy.jpg
+- name: Alya
+  position: Vice President
+  image: anonymous-blue.jpg
+- name: Samantha
+  position: Secretary
+  image: samantha.jpeg
+- name: Jenny
+  position: Treasurer
+  image: jenny.jpg
 - name: Muhammad Fathy Rashad
   position: Tech Manager
   image: rashad.jpg
 - name: Alex Shai Zhi Xuan
   position: Community Manager
   image: alex.jpeg
+- name: Fatyn
+  position: Content Manager
+  image: fatyn.jpeg
 - name: Norard Thong Tsin Tet
   position: Manager
-  image: anonymous-blue.jpg
-- name: Fatyn
-  position: Manager
-  image: fatyn.jpeg
-- name: Sam
-  position: Manager
-  image: sam.jpeg
+  image: norard.jpeg
+
