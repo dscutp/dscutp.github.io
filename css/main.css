@@ -63,6 +63,17 @@ main {
   margin-top: 100px;
 }
 
+.social {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.social i {
+  margin-left: 15px
+}
+
 #team .card{
   margin: 20px;
   width: 200px;
