@@ -21,8 +21,6 @@ A beginner workshop introducting version control using Git and Github.
 - What is Git? 
 - What is GitHub? 
 - Why use Git? 
-
-- Hands on
 - How to use Git? 
   + Installing git 
   + Initialize git repository 
