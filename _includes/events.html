@@ -1,0 +1,26 @@
+<div id="events" class="m-0">
+    <div class="container text-center">
+      <h2 class="title my-5" data-aos="fade-up">Activities</h2>
+      <div class="d-flex flex-wrap justify-content-center">
+        {% for post in site.posts %}
+          <div class="card event-card" data-aos="fade-up">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="{{post.thumbnail}}" alt="Card image cap">
+              <a href="{{post.url}}">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          
+            <!-- Card content -->
+            <div class="card-body card-body-cascade text-center">
+          
+              <h6 class="card-title"><strong>{{post.title}}</strong></h6>
+              <p class="card-text"><i class="fas fa-calendar-alt"></i> {{ post.event_date | date: '%B %d, %Y' }}</p>              
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

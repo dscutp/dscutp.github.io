@@ -70,6 +70,22 @@ main {
   font-size: 1.2em;
 }
 
+.event {
+  margin-top: 600px;
+}
+
+.event img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+
+#events .card {
+  margin: 20px;
+  width: 300px;
+  height: 400px;
+}
+
 #team .card{
   margin: 20px;
   width: 200px;

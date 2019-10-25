@@ -1,0 +1,28 @@
+<div id="team" class="m-0">
+  <div class="container text-center">
+    <h2 class="title my-5" data-aos="fade-up">Core Team</h2>
+    <div class="d-flex flex-wrap justify-content-center">
+      {% for person in site.data.team %}
+        <div class="card team-card" data-aos="fade-up">
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="card-img-top" src="images/team/{{person.image}}" alt="Card image cap">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!-- Card content -->
+          <div class="card-body card-body-cascade text-center">
+            <h6 class="card-title"><strong>{{person.position}}</strong></h6>
+            <p class="card-text">{{person.name}}</p>              
+            <div class="social">
+                {% if person.linkedin %}<a class="px-2 fa-sm li-ic" href="{{person.linkedin}}"><i class="fab fa-linkedin-in"></i></a>{% endif %}
+                {% if person.github %}<a class="px-2 fa-sm gh-ic" href="{{person.github}}"><i class="fab fa-github"></i></a>{% endif %}
+                {% if person.facebook %}<a class="px-2 fa-sm fb-ic" href="{{person.facebook}}"><i class="fab fa-facebook-f"></i></a>{% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
