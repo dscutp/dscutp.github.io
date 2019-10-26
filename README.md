@@ -81,12 +81,12 @@ The website will run on port 4000 by default, open `localhost:4000` on your brow
   * [Installation](#installation)
 * [Documentation](#documentation)
   * [Index Page](#index-page)
-  * [Team Member](#team-member)
-    * [Adding a Member/Changing Details](#adding-a-member/changing-details)
-    * [Change Styling](#change-styling)
-  * [Activity/Event](#activity/event)
+  * [Team Members](#team-members)
+    * [Adding a Member/Changing Details](#adding-a-memberchanging-details)
+    * [Changing Styling](#changing-styling)
+  * [Activity](#activity)
     * [Adding New Activity](#adding-new-activity)
-    * [Changing Page Layout](#changing-activity/event-page-layout)
+    * [Changing Page Layout](#changing-activity-page-layout)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -169,7 +169,7 @@ To make changes on the index page, go to `index.html` in the root directory. Do 
 
 ### Team Members
 This section covers making change on Team sections shown on the root page.
-#### Adding a member/Change details
+#### Adding a member/Changing details
 Go to `data/team.yml`, and make the necessary change
 #### Changing Styling
 Go to `_includes/team.html` to make changes on the html code of the Team section.
@@ -192,7 +192,7 @@ thumbnail: assets/thumbnail-file-name.jpg
 ```
 Please upload the thumbnail of the event inside `assets` directory, and put the thumbnail path on the front matter.
 
-#### Changing Activity/Event Page layout
+#### Changing Activity Page layout
 The HTML code used for the event page can be changed in the `_layouts/post.html`. If you want to use a unique layout instead, create a new html file inside `_layouts` directory. Then specify the use the created layout on the front matter of the post.
 
 
