@@ -3,7 +3,7 @@
   image: daffy.jpg
 - name: Alya
   position: Vice President
-  image: anonymous-blue.jpg
+  image: alya.jpeg
 - name: Samantha
   position: Secretary
   image: samantha.jpeg
@@ -12,7 +12,7 @@
   image: jenny.jpg
 - name: Muhammad Fathy Rashad
   position: Tech Manager
-  image: rashad.jpg
+  image: rashad.png
   linkedin: https://www.linkedin.com/in/mfathyrashad
   github: https://github.com/mfrashad
   dev: https://dev.to/mfrashad
